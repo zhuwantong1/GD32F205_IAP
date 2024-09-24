@@ -19,7 +19,7 @@ void INTX_ENABLE(void)
 }
 //…Ë÷√’ª∂•µÿ÷∑
 //addr:’ª∂•µÿ÷∑
-__ASM void MSR_MSP(uint32_t addr){
+__asm void MSR_MSP(uint32_t addr){
     MSR MSP, r0 //set Main Stack value
     BX r14
 }

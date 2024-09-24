@@ -1,0 +1,357 @@
+{
+  "name": "project",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "USER",
+        "files": [
+          {
+            "path": "../USER/gd32f20x_it.c"
+          },
+          {
+            "path": "../USER/main.c"
+          },
+          {
+            "path": "../USER/systick.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Driver",
+        "files": [
+          {
+            "path": "../Driver/usart.c"
+          },
+          {
+            "path": "../Driver/flash.c"
+          },
+          {
+            "path": "../Driver/iap.c"
+          },
+          {
+            "path": "../Driver/sys.c"
+          },
+          {
+            "path": "../Driver/led.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "GD32F20x_Firmware_Library",
+        "files": [
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_adc.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_bkp.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_can.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_cau.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_cau_aes.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_cau_des.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_cau_tdes.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_crc.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_dac.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_dbg.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_dci.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_dma.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_enet.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_exmc.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_exti.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_fmc.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_fwdgt.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_gpio.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_hau.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_hau_sha_md5.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_i2c.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_misc.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_pmu.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_rcu.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_rtc.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_sdio.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_spi.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_timer.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_tli.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_trng.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_usart.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Source/gd32f20x_wwdgt.c"
+          },
+          {
+            "path": "../GD32F20x_Firmware_Library/CMSIS/GD/GD32F20x/Source/system_gd32f20x.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Startup",
+        "files": [
+          {
+            "path": "../Startup/startup_gd32f20x_cl.s"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "4ce5249cea3ff3737c7357dcfab7b4b5"
+  },
+  "targets": {
+    "Target 1": {
+      "excludeList": [],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x20000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x40000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../USER",
+          "../GD32F20x_Firmware_Library/CMSIS",
+          "../GD32F20x_Firmware_Library/GD32F20x_standard_peripheral/Include",
+          "../GD32F20x_Firmware_Library/CMSIS/GD/GD32F20x/Include",
+          "../Driver",
+          ".cmsis/include",
+          "RTE/_Target 1"
+        ],
+        "libList": [],
+        "defineList": [
+          "USE_STDPERIPH_DRIVER",
+          "GD32F20X_CL"
+        ]
+      },
+      "builderOptions": {
+        "AC5": {
+          "version": 4,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [
+            {
+              "name": "[Copy linker output for Keil User Commands]",
+              "command": "mkdir ${KEIL_OUTPUT_DIR} & copy \"${OutDir}\\${ProjectName}.axf\" \"${KEIL_OUTPUT_DIR}\\${ProjectName}.axf\"",
+              "disable": false,
+              "abortAfterFailed": true
+            },
+            {
+              "name": "fromelf --text -a -c --output=all.dis ./objects/project.axf",
+              "command": "fromelf --text -a -c --output=all.dis ./objects/project.axf",
+              "disable": false,
+              "abortAfterFailed": true
+            }
+          ],
+          "global": {
+            "use-microLIB": true,
+            "output-debug-info": "enable"
+          },
+          "c/cpp-compiler": {
+            "optimization": "level-0",
+            "one-elf-section-per-function": true,
+            "c99-mode": true,
+            "C_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "CXX_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "warnings": "all-warnings"
+          },
+          "asm-compiler": {},
+          "linker": {
+            "output-format": "elf",
+            "xo-base": "",
+            "ro-base": "0x08000000",
+            "rw-base": "0x20000000"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.5"
+}

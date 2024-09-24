@@ -11,8 +11,8 @@ Section Cross References
     main.o(i.main) refers to systick.o(i.delay_ms) for delay_ms
     main.o(i.main) refers to gd32f20x_gpio.o(i.gpio_bit_reset) for gpio_bit_reset
     main.o(i.main) refers to printf1.o(i.__0printf$1) for __2printf
-    main.o(i.main) refers to iap.o(i.iap_write_appbin) for iap_write_appbin
     main.o(i.main) refers to iap.o(i.iap_load_app) for iap_load_app
+    main.o(i.main) refers to iap.o(i.iap_write_appbin) for iap_write_appbin
     main.o(i.main) refers to usart.o(.data) for USART_RX_CNT
     main.o(i.main) refers to usart.o(.ARM.__AT_0x20001000) for USART_RX_BUF
     systick.o(i.delay_1ms) refers to systick.o(.data) for delay
@@ -1622,34 +1622,34 @@ Image Symbol Table
     i.iap_write_appbin                       0x08000a18   Section        0  iap.o(i.iap_write_appbin)
     i.led_gpio_init                          0x08000a80   Section        0  led.o(i.led_gpio_init)
     i.main                                   0x08000ac8   Section        0  main.o(i.main)
-    i.nvic_irq_enable                        0x08000ef0   Section        0  gd32f20x_misc.o(i.nvic_irq_enable)
-    i.nvic_priority_group_set                0x08000f9c   Section        0  gd32f20x_misc.o(i.nvic_priority_group_set)
-    i.rcu_clock_freq_get                     0x08000fb0   Section        0  gd32f20x_rcu.o(i.rcu_clock_freq_get)
-    i.rcu_periph_clock_enable                0x0800111c   Section        0  gd32f20x_rcu.o(i.rcu_periph_clock_enable)
-    i.rcu_periph_reset_disable               0x0800113c   Section        0  gd32f20x_rcu.o(i.rcu_periph_reset_disable)
-    i.rcu_periph_reset_enable                0x0800115c   Section        0  gd32f20x_rcu.o(i.rcu_periph_reset_enable)
-    i.system_clock_120m_hxtal                0x0800117c   Section        0  system_gd32f20x.o(i.system_clock_120m_hxtal)
-    system_clock_120m_hxtal                  0x0800117d   Thumb Code   210  system_gd32f20x.o(i.system_clock_120m_hxtal)
-    i.system_clock_config                    0x08001260   Section        0  system_gd32f20x.o(i.system_clock_config)
-    system_clock_config                      0x08001261   Thumb Code     8  system_gd32f20x.o(i.system_clock_config)
-    i.systick_clksource_set                  0x08001268   Section        0  gd32f20x_misc.o(i.systick_clksource_set)
-    i.systick_config                         0x08001290   Section        0  systick.o(i.systick_config)
-    i.usart_baudrate_set                     0x080012d4   Section        0  gd32f20x_usart.o(i.usart_baudrate_set)
-    i.usart_config                           0x08001398   Section        0  usart.o(i.usart_config)
-    i.usart_data_receive                     0x08001434   Section        0  gd32f20x_usart.o(i.usart_data_receive)
-    i.usart_data_transmit                    0x0800143e   Section        0  gd32f20x_usart.o(i.usart_data_transmit)
-    i.usart_deinit                           0x08001448   Section        0  gd32f20x_usart.o(i.usart_deinit)
-    i.usart_enable                           0x08001524   Section        0  gd32f20x_usart.o(i.usart_enable)
-    i.usart_flag_get                         0x0800152e   Section        0  gd32f20x_usart.o(i.usart_flag_get)
-    i.usart_hardware_flow_cts_config         0x0800154c   Section        0  gd32f20x_usart.o(i.usart_hardware_flow_cts_config)
-    i.usart_hardware_flow_rts_config         0x08001560   Section        0  gd32f20x_usart.o(i.usart_hardware_flow_rts_config)
-    i.usart_interrupt_enable                 0x08001574   Section        0  gd32f20x_usart.o(i.usart_interrupt_enable)
-    i.usart_interrupt_flag_get               0x0800158e   Section        0  gd32f20x_usart.o(i.usart_interrupt_flag_get)
-    i.usart_parity_config                    0x080015c6   Section        0  gd32f20x_usart.o(i.usart_parity_config)
-    i.usart_receive_config                   0x080015d6   Section        0  gd32f20x_usart.o(i.usart_receive_config)
-    i.usart_stop_bit_set                     0x080015ea   Section        0  gd32f20x_usart.o(i.usart_stop_bit_set)
-    i.usart_transmit_config                  0x080015fa   Section        0  gd32f20x_usart.o(i.usart_transmit_config)
-    i.usart_word_length_set                  0x0800160e   Section        0  gd32f20x_usart.o(i.usart_word_length_set)
+    i.nvic_irq_enable                        0x08000f3c   Section        0  gd32f20x_misc.o(i.nvic_irq_enable)
+    i.nvic_priority_group_set                0x08000fe8   Section        0  gd32f20x_misc.o(i.nvic_priority_group_set)
+    i.rcu_clock_freq_get                     0x08000ffc   Section        0  gd32f20x_rcu.o(i.rcu_clock_freq_get)
+    i.rcu_periph_clock_enable                0x08001168   Section        0  gd32f20x_rcu.o(i.rcu_periph_clock_enable)
+    i.rcu_periph_reset_disable               0x08001188   Section        0  gd32f20x_rcu.o(i.rcu_periph_reset_disable)
+    i.rcu_periph_reset_enable                0x080011a8   Section        0  gd32f20x_rcu.o(i.rcu_periph_reset_enable)
+    i.system_clock_120m_hxtal                0x080011c8   Section        0  system_gd32f20x.o(i.system_clock_120m_hxtal)
+    system_clock_120m_hxtal                  0x080011c9   Thumb Code   210  system_gd32f20x.o(i.system_clock_120m_hxtal)
+    i.system_clock_config                    0x080012ac   Section        0  system_gd32f20x.o(i.system_clock_config)
+    system_clock_config                      0x080012ad   Thumb Code     8  system_gd32f20x.o(i.system_clock_config)
+    i.systick_clksource_set                  0x080012b4   Section        0  gd32f20x_misc.o(i.systick_clksource_set)
+    i.systick_config                         0x080012dc   Section        0  systick.o(i.systick_config)
+    i.usart_baudrate_set                     0x08001320   Section        0  gd32f20x_usart.o(i.usart_baudrate_set)
+    i.usart_config                           0x080013e4   Section        0  usart.o(i.usart_config)
+    i.usart_data_receive                     0x08001480   Section        0  gd32f20x_usart.o(i.usart_data_receive)
+    i.usart_data_transmit                    0x0800148a   Section        0  gd32f20x_usart.o(i.usart_data_transmit)
+    i.usart_deinit                           0x08001494   Section        0  gd32f20x_usart.o(i.usart_deinit)
+    i.usart_enable                           0x08001570   Section        0  gd32f20x_usart.o(i.usart_enable)
+    i.usart_flag_get                         0x0800157a   Section        0  gd32f20x_usart.o(i.usart_flag_get)
+    i.usart_hardware_flow_cts_config         0x08001598   Section        0  gd32f20x_usart.o(i.usart_hardware_flow_cts_config)
+    i.usart_hardware_flow_rts_config         0x080015ac   Section        0  gd32f20x_usart.o(i.usart_hardware_flow_rts_config)
+    i.usart_interrupt_enable                 0x080015c0   Section        0  gd32f20x_usart.o(i.usart_interrupt_enable)
+    i.usart_interrupt_flag_get               0x080015da   Section        0  gd32f20x_usart.o(i.usart_interrupt_flag_get)
+    i.usart_parity_config                    0x08001612   Section        0  gd32f20x_usart.o(i.usart_parity_config)
+    i.usart_receive_config                   0x08001622   Section        0  gd32f20x_usart.o(i.usart_receive_config)
+    i.usart_stop_bit_set                     0x08001636   Section        0  gd32f20x_usart.o(i.usart_stop_bit_set)
+    i.usart_transmit_config                  0x08001646   Section        0  gd32f20x_usart.o(i.usart_transmit_config)
+    i.usart_word_length_set                  0x0800165a   Section        0  gd32f20x_usart.o(i.usart_word_length_set)
     .data                                    0x20000000   Section        7  systick.o(.data)
     delay                                    0x20000000   Data           4  systick.o(.data)
     fac_ms                                   0x20000004   Data           2  systick.o(.data)
@@ -1847,33 +1847,33 @@ Image Symbol Table
     iap_load_app                             0x080009ed   Thumb Code    36  iap.o(i.iap_load_app)
     iap_write_appbin                         0x08000a19   Thumb Code    98  iap.o(i.iap_write_appbin)
     led_gpio_init                            0x08000a81   Thumb Code    64  led.o(i.led_gpio_init)
-    main                                     0x08000ac9   Thumb Code   412  main.o(i.main)
-    nvic_irq_enable                          0x08000ef1   Thumb Code   162  gd32f20x_misc.o(i.nvic_irq_enable)
-    nvic_priority_group_set                  0x08000f9d   Thumb Code    10  gd32f20x_misc.o(i.nvic_priority_group_set)
-    rcu_clock_freq_get                       0x08000fb1   Thumb Code   336  gd32f20x_rcu.o(i.rcu_clock_freq_get)
-    rcu_periph_clock_enable                  0x0800111d   Thumb Code    28  gd32f20x_rcu.o(i.rcu_periph_clock_enable)
-    rcu_periph_reset_disable                 0x0800113d   Thumb Code    28  gd32f20x_rcu.o(i.rcu_periph_reset_disable)
-    rcu_periph_reset_enable                  0x0800115d   Thumb Code    28  gd32f20x_rcu.o(i.rcu_periph_reset_enable)
-    systick_clksource_set                    0x08001269   Thumb Code    40  gd32f20x_misc.o(i.systick_clksource_set)
-    systick_config                           0x08001291   Thumb Code    50  systick.o(i.systick_config)
-    usart_baudrate_set                       0x080012d5   Thumb Code   186  gd32f20x_usart.o(i.usart_baudrate_set)
-    usart_config                             0x08001399   Thumb Code   146  usart.o(i.usart_config)
-    usart_data_receive                       0x08001435   Thumb Code    10  gd32f20x_usart.o(i.usart_data_receive)
-    usart_data_transmit                      0x0800143f   Thumb Code     8  gd32f20x_usart.o(i.usart_data_transmit)
-    usart_deinit                             0x08001449   Thumb Code   210  gd32f20x_usart.o(i.usart_deinit)
-    usart_enable                             0x08001525   Thumb Code    10  gd32f20x_usart.o(i.usart_enable)
-    usart_flag_get                           0x0800152f   Thumb Code    30  gd32f20x_usart.o(i.usart_flag_get)
-    usart_hardware_flow_cts_config           0x0800154d   Thumb Code    20  gd32f20x_usart.o(i.usart_hardware_flow_cts_config)
-    usart_hardware_flow_rts_config           0x08001561   Thumb Code    20  gd32f20x_usart.o(i.usart_hardware_flow_rts_config)
-    usart_interrupt_enable                   0x08001575   Thumb Code    26  gd32f20x_usart.o(i.usart_interrupt_enable)
-    usart_interrupt_flag_get                 0x0800158f   Thumb Code    56  gd32f20x_usart.o(i.usart_interrupt_flag_get)
-    usart_parity_config                      0x080015c7   Thumb Code    16  gd32f20x_usart.o(i.usart_parity_config)
-    usart_receive_config                     0x080015d7   Thumb Code    20  gd32f20x_usart.o(i.usart_receive_config)
-    usart_stop_bit_set                       0x080015eb   Thumb Code    16  gd32f20x_usart.o(i.usart_stop_bit_set)
-    usart_transmit_config                    0x080015fb   Thumb Code    20  gd32f20x_usart.o(i.usart_transmit_config)
-    usart_word_length_set                    0x0800160f   Thumb Code    16  gd32f20x_usart.o(i.usart_word_length_set)
-    Region$$Table$$Base                      0x08001620   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08001640   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x08000ac9   Thumb Code   468  main.o(i.main)
+    nvic_irq_enable                          0x08000f3d   Thumb Code   162  gd32f20x_misc.o(i.nvic_irq_enable)
+    nvic_priority_group_set                  0x08000fe9   Thumb Code    10  gd32f20x_misc.o(i.nvic_priority_group_set)
+    rcu_clock_freq_get                       0x08000ffd   Thumb Code   336  gd32f20x_rcu.o(i.rcu_clock_freq_get)
+    rcu_periph_clock_enable                  0x08001169   Thumb Code    28  gd32f20x_rcu.o(i.rcu_periph_clock_enable)
+    rcu_periph_reset_disable                 0x08001189   Thumb Code    28  gd32f20x_rcu.o(i.rcu_periph_reset_disable)
+    rcu_periph_reset_enable                  0x080011a9   Thumb Code    28  gd32f20x_rcu.o(i.rcu_periph_reset_enable)
+    systick_clksource_set                    0x080012b5   Thumb Code    40  gd32f20x_misc.o(i.systick_clksource_set)
+    systick_config                           0x080012dd   Thumb Code    50  systick.o(i.systick_config)
+    usart_baudrate_set                       0x08001321   Thumb Code   186  gd32f20x_usart.o(i.usart_baudrate_set)
+    usart_config                             0x080013e5   Thumb Code   146  usart.o(i.usart_config)
+    usart_data_receive                       0x08001481   Thumb Code    10  gd32f20x_usart.o(i.usart_data_receive)
+    usart_data_transmit                      0x0800148b   Thumb Code     8  gd32f20x_usart.o(i.usart_data_transmit)
+    usart_deinit                             0x08001495   Thumb Code   210  gd32f20x_usart.o(i.usart_deinit)
+    usart_enable                             0x08001571   Thumb Code    10  gd32f20x_usart.o(i.usart_enable)
+    usart_flag_get                           0x0800157b   Thumb Code    30  gd32f20x_usart.o(i.usart_flag_get)
+    usart_hardware_flow_cts_config           0x08001599   Thumb Code    20  gd32f20x_usart.o(i.usart_hardware_flow_cts_config)
+    usart_hardware_flow_rts_config           0x080015ad   Thumb Code    20  gd32f20x_usart.o(i.usart_hardware_flow_rts_config)
+    usart_interrupt_enable                   0x080015c1   Thumb Code    26  gd32f20x_usart.o(i.usart_interrupt_enable)
+    usart_interrupt_flag_get                 0x080015db   Thumb Code    56  gd32f20x_usart.o(i.usart_interrupt_flag_get)
+    usart_parity_config                      0x08001613   Thumb Code    16  gd32f20x_usart.o(i.usart_parity_config)
+    usart_receive_config                     0x08001623   Thumb Code    20  gd32f20x_usart.o(i.usart_receive_config)
+    usart_stop_bit_set                       0x08001637   Thumb Code    16  gd32f20x_usart.o(i.usart_stop_bit_set)
+    usart_transmit_config                    0x08001647   Thumb Code    20  gd32f20x_usart.o(i.usart_transmit_config)
+    usart_word_length_set                    0x0800165b   Thumb Code    16  gd32f20x_usart.o(i.usart_word_length_set)
+    Region$$Table$$Base                      0x0800166c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x0800168c   Number         0  anon$$obj.o(Region$$Table)
     USART_RX_STA                             0x20000008   Data           2  usart.o(.data)
     USART_RX_CNT                             0x2000000c   Data           4  usart.o(.data)
     CodeUpdateFlag                           0x20000010   Data           1  usart.o(.data)
@@ -1893,117 +1893,117 @@ Memory Map of the image
 
   Image Entry point : 0x080001a9
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001660, Max: 0x00040000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000016ac, Max: 0x00040000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001640, Max: 0x00040000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x0000168c, Max: 0x00040000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x08000000   0x08000000   0x000001a8   Data   RO         5767    RESET               startup_gd32f20x_cl.o
-    0x080001a8   0x080001a8   0x00000000   Code   RO         5772  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x080001a8   0x080001a8   0x00000004   Code   RO         6038    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x080001ac   0x080001ac   0x00000004   Code   RO         6041    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x080001b0   0x080001b0   0x00000000   Code   RO         6043    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x080001b0   0x080001b0   0x00000000   Code   RO         6045    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x080001b0   0x080001b0   0x00000008   Code   RO         6046    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x080001b8   0x080001b8   0x00000004   Code   RO         6053    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
-    0x080001bc   0x080001bc   0x00000000   Code   RO         6048    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
-    0x080001bc   0x080001bc   0x00000000   Code   RO         6050    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
-    0x080001bc   0x080001bc   0x00000004   Code   RO         6039    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
-    0x080001c0   0x080001c0   0x00000006   Code   RO          506    .emb_text           sys.o
+    0x08000000   0x08000000   0x000001a8   Data   RO         5660    RESET               startup_gd32f20x_cl.o
+    0x080001a8   0x080001a8   0x00000000   Code   RO         5665  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080001a8   0x080001a8   0x00000004   Code   RO         5931    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080001ac   0x080001ac   0x00000004   Code   RO         5934    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080001b0   0x080001b0   0x00000000   Code   RO         5936    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080001b0   0x080001b0   0x00000000   Code   RO         5938    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080001b0   0x080001b0   0x00000008   Code   RO         5939    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080001b8   0x080001b8   0x00000004   Code   RO         5946    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
+    0x080001bc   0x080001bc   0x00000000   Code   RO         5941    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
+    0x080001bc   0x080001bc   0x00000000   Code   RO         5943    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
+    0x080001bc   0x080001bc   0x00000004   Code   RO         5932    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x080001c0   0x080001c0   0x00000006   Code   RO          399    .emb_text           sys.o
     0x080001c6   0x080001c6   0x00000002   PAD
-    0x080001c8   0x080001c8   0x00000024   Code   RO         5768    .text               startup_gd32f20x_cl.o
-    0x080001ec   0x080001ec   0x0000002c   Code   RO         6055    .text               mc_w.l(uidiv.o)
-    0x08000218   0x08000218   0x00000024   Code   RO         6072    .text               mc_w.l(init.o)
+    0x080001c8   0x080001c8   0x00000024   Code   RO         5661    .text               startup_gd32f20x_cl.o
+    0x080001ec   0x080001ec   0x0000002c   Code   RO         5948    .text               mc_w.l(uidiv.o)
+    0x08000218   0x08000218   0x00000024   Code   RO         5965    .text               mc_w.l(init.o)
     0x0800023c   0x0800023c   0x00000004   Code   RO            3    i.BusFault_Handler  gd32f20x_it.o
     0x08000240   0x08000240   0x00000002   Code   RO            4    i.DebugMon_Handler  gd32f20x_it.o
     0x08000242   0x08000242   0x00000004   Code   RO            5    i.HardFault_Handler  gd32f20x_it.o
     0x08000246   0x08000246   0x00000004   Code   RO            6    i.MemManage_Handler  gd32f20x_it.o
     0x0800024a   0x0800024a   0x00000002   Code   RO            7    i.NMI_Handler       gd32f20x_it.o
     0x0800024c   0x0800024c   0x00000002   Code   RO            8    i.PendSV_Handler    gd32f20x_it.o
-    0x0800024e   0x0800024e   0x00000022   Code   RO          429    i.STMFLASH_Read     flash.o
-    0x08000270   0x08000270   0x00000006   Code   RO          430    i.STMFLASH_ReadHalfWord  flash.o
+    0x0800024e   0x0800024e   0x00000022   Code   RO          322    i.STMFLASH_Read     flash.o
+    0x08000270   0x08000270   0x00000006   Code   RO          323    i.STMFLASH_ReadHalfWord  flash.o
     0x08000276   0x08000276   0x00000002   PAD
-    0x08000278   0x08000278   0x000000e8   Code   RO          431    i.STMFLASH_Write    flash.o
-    0x08000360   0x08000360   0x00000026   Code   RO          432    i.STMFLASH_Write_NoCheck  flash.o
+    0x08000278   0x08000278   0x000000e8   Code   RO          324    i.STMFLASH_Write    flash.o
+    0x08000360   0x08000360   0x00000026   Code   RO          325    i.STMFLASH_Write_NoCheck  flash.o
     0x08000386   0x08000386   0x00000002   Code   RO            9    i.SVC_Handler       gd32f20x_it.o
     0x08000388   0x08000388   0x00000002   Code   RO           10    i.SysTick_Handler   gd32f20x_it.o
     0x0800038a   0x0800038a   0x00000002   PAD
-    0x0800038c   0x0800038c   0x00000090   Code   RO         5726    i.SystemInit        system_gd32f20x.o
-    0x0800041c   0x0800041c   0x00000044   Code   RO          377    i.USART2_IRQHandler  usart.o
+    0x0800038c   0x0800038c   0x00000090   Code   RO         5619    i.SystemInit        system_gd32f20x.o
+    0x0800041c   0x0800041c   0x00000044   Code   RO          270    i.USART2_IRQHandler  usart.o
     0x08000460   0x08000460   0x00000004   Code   RO           11    i.UsageFault_Handler  gd32f20x_it.o
-    0x08000464   0x08000464   0x00000020   Code   RO         5822    i.__0printf$1       mc_w.l(printf1.o)
-    0x08000484   0x08000484   0x0000000e   Code   RO         6080    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08000492   0x08000492   0x00000002   Code   RO         6081    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08000494   0x08000494   0x0000000e   Code   RO         6082    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08000464   0x08000464   0x00000020   Code   RO         5715    i.__0printf$1       mc_w.l(printf1.o)
+    0x08000484   0x08000484   0x0000000e   Code   RO         5973    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08000492   0x08000492   0x00000002   Code   RO         5974    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08000494   0x08000494   0x0000000e   Code   RO         5975    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x080004a2   0x080004a2   0x00000002   PAD
-    0x080004a4   0x080004a4   0x00000154   Code   RO         5829    i._printf_core      mc_w.l(printf1.o)
-    0x080005f8   0x080005f8   0x0000004c   Code   RO          339    i.delay_ms          systick.o
-    0x08000644   0x08000644   0x00000022   Code   RO         2837    i.fmc_bank0_ready_wait  gd32f20x_fmc.o
+    0x080004a4   0x080004a4   0x00000154   Code   RO         5722    i._printf_core      mc_w.l(printf1.o)
+    0x080005f8   0x080005f8   0x0000004c   Code   RO          232    i.delay_ms          systick.o
+    0x08000644   0x08000644   0x00000022   Code   RO         2730    i.fmc_bank0_ready_wait  gd32f20x_fmc.o
     0x08000666   0x08000666   0x00000002   PAD
-    0x08000668   0x08000668   0x00000030   Code   RO         2838    i.fmc_bank0_state_get  gd32f20x_fmc.o
-    0x08000698   0x08000698   0x00000022   Code   RO         2842    i.fmc_bank1_ready_wait  gd32f20x_fmc.o
+    0x08000668   0x08000668   0x00000030   Code   RO         2731    i.fmc_bank0_state_get  gd32f20x_fmc.o
+    0x08000698   0x08000698   0x00000022   Code   RO         2735    i.fmc_bank1_ready_wait  gd32f20x_fmc.o
     0x080006ba   0x080006ba   0x00000002   PAD
-    0x080006bc   0x080006bc   0x00000030   Code   RO         2843    i.fmc_bank1_state_get  gd32f20x_fmc.o
-    0x080006ec   0x080006ec   0x000000c0   Code   RO         2847    i.fmc_halfword_program  gd32f20x_fmc.o
-    0x080007ac   0x080007ac   0x0000002c   Code   RO         2852    i.fmc_lock          gd32f20x_fmc.o
-    0x080007d8   0x080007d8   0x000000f8   Code   RO         2854    i.fmc_page_erase    gd32f20x_fmc.o
-    0x080008d0   0x080008d0   0x00000044   Code   RO         2855    i.fmc_unlock        gd32f20x_fmc.o
-    0x08000914   0x08000914   0x00000024   Code   RO          379    i.fputc             usart.o
-    0x08000938   0x08000938   0x00000004   Code   RO         3112    i.gpio_bit_reset    gd32f20x_gpio.o
-    0x0800093c   0x0800093c   0x00000004   Code   RO         3113    i.gpio_bit_set      gd32f20x_gpio.o
-    0x08000940   0x08000940   0x000000ac   Code   RO         3121    i.gpio_init         gd32f20x_gpio.o
-    0x080009ec   0x080009ec   0x0000002c   Code   RO          476    i.iap_load_app      iap.o
-    0x08000a18   0x08000a18   0x00000068   Code   RO          477    i.iap_write_appbin  iap.o
-    0x08000a80   0x08000a80   0x00000048   Code   RO          542    i.led_gpio_init     led.o
-    0x08000ac8   0x08000ac8   0x00000428   Code   RO          190    i.main              main.o
-    0x08000ef0   0x08000ef0   0x000000ac   Code   RO         3639    i.nvic_irq_enable   gd32f20x_misc.o
-    0x08000f9c   0x08000f9c   0x00000014   Code   RO         3640    i.nvic_priority_group_set  gd32f20x_misc.o
-    0x08000fb0   0x08000fb0   0x0000016c   Code   RO         3790    i.rcu_clock_freq_get  gd32f20x_rcu.o
-    0x0800111c   0x0800111c   0x00000020   Code   RO         3810    i.rcu_periph_clock_enable  gd32f20x_rcu.o
-    0x0800113c   0x0800113c   0x00000020   Code   RO         3813    i.rcu_periph_reset_disable  gd32f20x_rcu.o
-    0x0800115c   0x0800115c   0x00000020   Code   RO         3814    i.rcu_periph_reset_enable  gd32f20x_rcu.o
-    0x0800117c   0x0800117c   0x000000e4   Code   RO         5727    i.system_clock_120m_hxtal  system_gd32f20x.o
-    0x08001260   0x08001260   0x00000008   Code   RO         5728    i.system_clock_config  system_gd32f20x.o
-    0x08001268   0x08001268   0x00000028   Code   RO         3644    i.systick_clksource_set  gd32f20x_misc.o
-    0x08001290   0x08001290   0x00000044   Code   RO          340    i.systick_config    systick.o
-    0x080012d4   0x080012d4   0x000000c4   Code   RO         5350    i.usart_baudrate_set  gd32f20x_usart.o
-    0x08001398   0x08001398   0x0000009c   Code   RO          380    i.usart_config      usart.o
-    0x08001434   0x08001434   0x0000000a   Code   RO         5353    i.usart_data_receive  gd32f20x_usart.o
-    0x0800143e   0x0800143e   0x00000008   Code   RO         5354    i.usart_data_transmit  gd32f20x_usart.o
-    0x08001446   0x08001446   0x00000002   PAD
-    0x08001448   0x08001448   0x000000dc   Code   RO         5355    i.usart_deinit      gd32f20x_usart.o
-    0x08001524   0x08001524   0x0000000a   Code   RO         5359    i.usart_enable      gd32f20x_usart.o
-    0x0800152e   0x0800152e   0x0000001e   Code   RO         5361    i.usart_flag_get    gd32f20x_usart.o
-    0x0800154c   0x0800154c   0x00000014   Code   RO         5365    i.usart_hardware_flow_cts_config  gd32f20x_usart.o
-    0x08001560   0x08001560   0x00000014   Code   RO         5366    i.usart_hardware_flow_rts_config  gd32f20x_usart.o
-    0x08001574   0x08001574   0x0000001a   Code   RO         5368    i.usart_interrupt_enable  gd32f20x_usart.o
-    0x0800158e   0x0800158e   0x00000038   Code   RO         5370    i.usart_interrupt_flag_get  gd32f20x_usart.o
-    0x080015c6   0x080015c6   0x00000010   Code   RO         5381    i.usart_parity_config  gd32f20x_usart.o
-    0x080015d6   0x080015d6   0x00000014   Code   RO         5383    i.usart_receive_config  gd32f20x_usart.o
-    0x080015ea   0x080015ea   0x00000010   Code   RO         5393    i.usart_stop_bit_set  gd32f20x_usart.o
-    0x080015fa   0x080015fa   0x00000014   Code   RO         5397    i.usart_transmit_config  gd32f20x_usart.o
-    0x0800160e   0x0800160e   0x00000010   Code   RO         5398    i.usart_word_length_set  gd32f20x_usart.o
-    0x0800161e   0x0800161e   0x00000002   PAD
-    0x08001620   0x08001620   0x00000020   Data   RO         6078    Region$$Table       anon$$obj.o
+    0x080006bc   0x080006bc   0x00000030   Code   RO         2736    i.fmc_bank1_state_get  gd32f20x_fmc.o
+    0x080006ec   0x080006ec   0x000000c0   Code   RO         2740    i.fmc_halfword_program  gd32f20x_fmc.o
+    0x080007ac   0x080007ac   0x0000002c   Code   RO         2745    i.fmc_lock          gd32f20x_fmc.o
+    0x080007d8   0x080007d8   0x000000f8   Code   RO         2747    i.fmc_page_erase    gd32f20x_fmc.o
+    0x080008d0   0x080008d0   0x00000044   Code   RO         2748    i.fmc_unlock        gd32f20x_fmc.o
+    0x08000914   0x08000914   0x00000024   Code   RO          272    i.fputc             usart.o
+    0x08000938   0x08000938   0x00000004   Code   RO         3005    i.gpio_bit_reset    gd32f20x_gpio.o
+    0x0800093c   0x0800093c   0x00000004   Code   RO         3006    i.gpio_bit_set      gd32f20x_gpio.o
+    0x08000940   0x08000940   0x000000ac   Code   RO         3014    i.gpio_init         gd32f20x_gpio.o
+    0x080009ec   0x080009ec   0x0000002c   Code   RO          369    i.iap_load_app      iap.o
+    0x08000a18   0x08000a18   0x00000068   Code   RO          370    i.iap_write_appbin  iap.o
+    0x08000a80   0x08000a80   0x00000048   Code   RO          435    i.led_gpio_init     led.o
+    0x08000ac8   0x08000ac8   0x00000474   Code   RO          190    i.main              main.o
+    0x08000f3c   0x08000f3c   0x000000ac   Code   RO         3532    i.nvic_irq_enable   gd32f20x_misc.o
+    0x08000fe8   0x08000fe8   0x00000014   Code   RO         3533    i.nvic_priority_group_set  gd32f20x_misc.o
+    0x08000ffc   0x08000ffc   0x0000016c   Code   RO         3683    i.rcu_clock_freq_get  gd32f20x_rcu.o
+    0x08001168   0x08001168   0x00000020   Code   RO         3703    i.rcu_periph_clock_enable  gd32f20x_rcu.o
+    0x08001188   0x08001188   0x00000020   Code   RO         3706    i.rcu_periph_reset_disable  gd32f20x_rcu.o
+    0x080011a8   0x080011a8   0x00000020   Code   RO         3707    i.rcu_periph_reset_enable  gd32f20x_rcu.o
+    0x080011c8   0x080011c8   0x000000e4   Code   RO         5620    i.system_clock_120m_hxtal  system_gd32f20x.o
+    0x080012ac   0x080012ac   0x00000008   Code   RO         5621    i.system_clock_config  system_gd32f20x.o
+    0x080012b4   0x080012b4   0x00000028   Code   RO         3537    i.systick_clksource_set  gd32f20x_misc.o
+    0x080012dc   0x080012dc   0x00000044   Code   RO          233    i.systick_config    systick.o
+    0x08001320   0x08001320   0x000000c4   Code   RO         5243    i.usart_baudrate_set  gd32f20x_usart.o
+    0x080013e4   0x080013e4   0x0000009c   Code   RO          273    i.usart_config      usart.o
+    0x08001480   0x08001480   0x0000000a   Code   RO         5246    i.usart_data_receive  gd32f20x_usart.o
+    0x0800148a   0x0800148a   0x00000008   Code   RO         5247    i.usart_data_transmit  gd32f20x_usart.o
+    0x08001492   0x08001492   0x00000002   PAD
+    0x08001494   0x08001494   0x000000dc   Code   RO         5248    i.usart_deinit      gd32f20x_usart.o
+    0x08001570   0x08001570   0x0000000a   Code   RO         5252    i.usart_enable      gd32f20x_usart.o
+    0x0800157a   0x0800157a   0x0000001e   Code   RO         5254    i.usart_flag_get    gd32f20x_usart.o
+    0x08001598   0x08001598   0x00000014   Code   RO         5258    i.usart_hardware_flow_cts_config  gd32f20x_usart.o
+    0x080015ac   0x080015ac   0x00000014   Code   RO         5259    i.usart_hardware_flow_rts_config  gd32f20x_usart.o
+    0x080015c0   0x080015c0   0x0000001a   Code   RO         5261    i.usart_interrupt_enable  gd32f20x_usart.o
+    0x080015da   0x080015da   0x00000038   Code   RO         5263    i.usart_interrupt_flag_get  gd32f20x_usart.o
+    0x08001612   0x08001612   0x00000010   Code   RO         5274    i.usart_parity_config  gd32f20x_usart.o
+    0x08001622   0x08001622   0x00000014   Code   RO         5276    i.usart_receive_config  gd32f20x_usart.o
+    0x08001636   0x08001636   0x00000010   Code   RO         5286    i.usart_stop_bit_set  gd32f20x_usart.o
+    0x08001646   0x08001646   0x00000014   Code   RO         5290    i.usart_transmit_config  gd32f20x_usart.o
+    0x0800165a   0x0800165a   0x00000010   Code   RO         5291    i.usart_word_length_set  gd32f20x_usart.o
+    0x0800166a   0x0800166a   0x00000002   PAD
+    0x0800166c   0x0800166c   0x00000020   Data   RO         5971    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08001640, Size: 0x00008800, Max: 0x00020000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x0800168c, Size: 0x00008800, Max: 0x00020000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08001640   0x00000007   Data   RW          341    .data               systick.o
-    0x20000007   0x08001647   0x00000001   PAD
-    0x20000008   0x08001648   0x00000009   Data   RW          382    .data               usart.o
-    0x20000011   0x08001651   0x00000003   PAD
-    0x20000014   0x08001654   0x00000004   Data   RW          479    .data               iap.o
-    0x20000018   0x08001658   0x00000004   Data   RW         5729    .data               system_gd32f20x.o
-    0x2000001c   0x0800165c   0x00000004   Data   RW         6054    .data               mc_w.l(stdout.o)
-    0x20000020        -       0x00000800   Zero   RW          434    .bss                flash.o
-    0x20000820   0x08001660   0x000007e0   PAD
-    0x20001000        -       0x00005000   Zero   RW          381    .ARM.__AT_0x20001000  usart.o
-    0x20006000        -       0x00000800   Zero   RW          478    .bss                iap.o
-    0x20006800        -       0x00002000   Zero   RW         5765    STACK               startup_gd32f20x_cl.o
+    0x20000000   0x0800168c   0x00000007   Data   RW          234    .data               systick.o
+    0x20000007   0x08001693   0x00000001   PAD
+    0x20000008   0x08001694   0x00000009   Data   RW          275    .data               usart.o
+    0x20000011   0x0800169d   0x00000003   PAD
+    0x20000014   0x080016a0   0x00000004   Data   RW          372    .data               iap.o
+    0x20000018   0x080016a4   0x00000004   Data   RW         5622    .data               system_gd32f20x.o
+    0x2000001c   0x080016a8   0x00000004   Data   RW         5947    .data               mc_w.l(stdout.o)
+    0x20000020        -       0x00000800   Zero   RW          327    .bss                flash.o
+    0x20000820   0x080016ac   0x000007e0   PAD
+    0x20001000        -       0x00005000   Zero   RW          274    .ARM.__AT_0x20001000  usart.o
+    0x20006000        -       0x00000800   Zero   RW          371    .bss                iap.o
+    0x20006800        -       0x00002000   Zero   RW         5658    STACK               startup_gd32f20x_cl.o
 
 
 ==============================================================================
@@ -2014,23 +2014,23 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
        310         10          0          0       2048       3161   flash.o
-       716         62          0          0          0       5040   gd32f20x_fmc.o
+       716         62          0          0          0       5028   gd32f20x_fmc.o
        180          0          0          0          0       2068   gd32f20x_gpio.o
-        26          0          0          0          0      49470   gd32f20x_it.o
-       232         20          0          0          0       2032   gd32f20x_misc.o
-       460         40          0          0          0       3052   gd32f20x_rcu.o
-       684         20          0          0          0       9779   gd32f20x_usart.o
+        26          0          0          0          0      49454   gd32f20x_it.o
+       232         20          0          0          0       2028   gd32f20x_misc.o
+       460         40          0          0          0       3048   gd32f20x_rcu.o
+       684         20          0          0          0       9775   gd32f20x_usart.o
        148         14          0          4       2048       1808   iap.o
         72          8          0          0          0        436   led.o
-      1064        652          0          0          0       1087   main.o
+      1140        672          0          0          0       1119   main.o
         36          8        424          0       8192        772   startup_gd32f20x_cl.o
          6          0          0          0          0        308   sys.o
        380         38          0          4          0       1947   system_gd32f20x.o
-       144         22          0          7          0       1428   systick.o
+       144         22          0          7          0       1424   systick.o
        260         32          0          9      20480       3503   usart.o
 
     ----------------------------------------------------------------------
-      4732        926        456         28      34784      85891   Object Totals
+      4808        946        456         28      34784      85879   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         14          0          0          4       2016          0   (incl. Padding)
 
@@ -2073,15 +2073,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      5240        956        456         32      34784      83411   Grand Totals
-      5240        956        456         32      34784      83411   ELF Image Totals
-      5240        956        456         32          0          0   ROM Totals
+      5316        976        456         32      34784      83399   Grand Totals
+      5316        976        456         32      34784      83399   ELF Image Totals
+      5316        976        456         32          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 5696 (   5.56kB)
+    Total RO  Size (Code + RO Data)                 5772 (   5.64kB)
     Total RW  Size (RW Data + ZI Data)             34816 (  34.00kB)
-    Total ROM Size (Code + RO Data + RW Data)       5728 (   5.59kB)
+    Total ROM Size (Code + RO Data + RW Data)       5804 (   5.67kB)
 
 ==============================================================================
 

@@ -1,11 +1,11 @@
 #include "usart.h"
 #include "gd32f20x.h"
 #include "stdio.h"
-uint8_t USART_RX_BUF[USART_REC_LEN] __attribute__ ((at(0X20001000)));//接收缓冲,最大USART_REC_LEN个字节,起始地址为0X20001000.    
+uint8_t USART_RX_BUF[USART_REC_LEN] __attribute__((at(0X20001000))); // 接收缓冲,最大USART_REC_LEN个字节,起始地址为0X20001000.
 
-uint16_t USART_RX_STA = 0;       //接收状态标记	  
-uint32_t USART_RX_CNT = 0;				//接收的字节数
-uint8_t  CodeUpdateFlag = 0;			//App代码更新标志
+uint16_t USART_RX_STA = 0;  // 接收状态标记
+uint32_t USART_RX_CNT = 0;  // 接收的字节数
+uint8_t CodeUpdateFlag = 0; // App代码更新标志
 
 void usart_config(void)
 {
@@ -32,7 +32,7 @@ void usart_config(void)
     usart_receive_config(USART2, USART_RECEIVE_ENABLE);
     usart_transmit_config(USART2, USART_TRANSMIT_ENABLE);
     usart_enable(USART2);
-		// 使能USART接收中断
+    // 使能USART接收中断
     usart_interrupt_enable(USART2, USART_INT_RBNE);
     // 配置NVIC中断优先级并使能中断
     nvic_irq_enable(USART2_IRQn, 0, 0);
@@ -42,7 +42,8 @@ void usart_config(void)
 int fputc(int ch, FILE *f)
 {
     usart_data_transmit(USART2, (uint8_t)ch);
-    while(RESET == usart_flag_get(USART2, USART_FLAG_TBE));
+    while (RESET == usart_flag_get(USART2, USART_FLAG_TBE))
+        ;
     return ch;
 }
 
@@ -53,24 +54,19 @@ int fgetc(FILE *f)
     return ch;
 }
 
-
-
 // USART中断处理函数
-void USART2_IRQHandler(void) {
-   uint8_t Res;
-	if(usart_interrupt_flag_get(USART2,USART_INT_FLAG_RBNE) != RESET)
-	{
-		Res = usart_data_receive(USART2);
-		
-//		usart_data_transmit(USART2, (uint8_t)Res);
-		
-		if(USART_RX_CNT < USART_REC_LEN)
-		{
-			USART_RX_BUF[USART_RX_CNT] = Res;
-			USART_RX_CNT++;			 									     
-		}	 	
-	}
+void USART2_IRQHandler(void)
+{
+    uint8_t Res;
+    if (usart_interrupt_flag_get(USART2, USART_INT_FLAG_RBNE) != RESET)
+    {
+        Res = usart_data_receive(USART2);
+        //  usart_data_transmit(USART2, (uint8_t)Res);
+
+        if (USART_RX_CNT < USART_REC_LEN)
+        {
+            USART_RX_BUF[USART_RX_CNT] = Res;
+            USART_RX_CNT++;
+        }
+    }
 }
-
-
-
